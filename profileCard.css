@@ -1,0 +1,114 @@
+:root{
+    /* Colors */
+    --background_color:  hsl(185, 75%, 39%);
+    --title_color:  hsl(229, 23%, 23%);
+    --stats_color: hsl(0, 0%, 59%);
+
+    /* Font */
+    --font_size: 18px;
+    --font_family: 'Kumbh Sans', sans-serif;
+    --font_weight-bold: 700;
+    --font_weight-regular: 400;
+}
+
+/* Mobile first design */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    /* border: 1px solid red; */
+    background: var(--background_color);
+    font-family: var(--font_family);
+    font-size: var(--font_size);
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profileCard{
+    /* border: 1px solid red; */
+    background: white;
+    height: 374px;
+    width: 326px;
+
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+}
+
+.profileCard-top{
+    height: 140px;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+
+.profileCard-middle{
+    height: 145px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.profileCard-image{
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    border: 5px solid white;
+
+    position: absolute;
+    top: -48px;
+}
+
+.profileCard-name{
+    margin-top: 77px;
+    font-size: var(--font_size);
+    font-weight: var(--font_weight-bold);
+}
+
+.profileCard-city{
+    font-size: .9rem;
+    margin-top: 17px;
+}
+
+.profileCard-bottom{
+    border-top: 1px solid var(--stats_color);
+    height: 88px;
+}
+
+.profileCard-stats{
+    /* border: 1px solid red; */
+    height: inherit;
+    list-style: none;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+}
+
+.profileCard-stats li p{
+    font-weight: var(--font_weight-bold);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+/* Shared styles */
+.secondary-text{
+    font-weight: var(--font_weight-regular);
+    color: var(--stats_color);
+}
+
+.stats{
+    margin-top: 12px;
+    font-size: .7rem;
+}
