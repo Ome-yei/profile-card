@@ -50,17 +50,18 @@ body{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;}
 
 .profileCard-top{
+    background: url('./images/bg-pattern-card.svg');
     width: inherit;
     height: 140px;
     border-top-left-radius: inherit;
     border-top-right-radius: inherit;
 }
 
-.profileCard-top-img{
+/* .profileCard-top-img{
     width: inherit;
     border-top-left-radius: inherit;
     border-top-right-radius: inherit;
-}
+} */
 
 .profileCard-middle{
     height: 145px;
