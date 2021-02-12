@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
@@ -12,33 +14,37 @@
   <link rel="stylesheet" href="./profileCard.css">
   <title>Frontend Mentor | Profile card component</title>
 </head>
+
 <body>
-  
-  <div class="profileCard">
-    <img src="./images/bg-pattern-card.svg" alt="Profile Card background" class="profileCard-top">
-    <div class="profileCard-middle">
-      <img src="./images/image-victor.jpg" alt="Profile Card User Image" class="profileCard-image">
-      <h1 class="profileCard-name">Victor Crest <span class="secondary-text">26</span></h1>
-      <p class="profileCard-city secondary-text">London</p>
+  <div class="container">
+    <div class="profileCard">
+      <img src="./images/bg-pattern-card.svg" alt="Profile Card background" class="profileCard-top">
+      <div class="profileCard-middle">
+        <img src="./images/image-victor.jpg" alt="Profile Card User Image" class="profileCard-image">
+        <h1 class="profileCard-name">Victor Crest <span class="secondary-text">26</span></h1>
+        <p class="profileCard-city secondary-text">London</p>
+      </div>
+      <div class="profileCard-bottom">
+        <ul class="profileCard-stats">
+          <li>
+            <p>80K<span class="secondary-text stats">Followers</span></p>
+          </li>
+          <li>
+            <p>803K<span class="secondary-text stats">Likes</span></p>
+          </li>
+          <li>
+            <p>1.4K<span class="secondary-text stats">Photos</span></p>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="profileCard-bottom">
-      <ul class="profileCard-stats">
-        <li>
-          <p>80K<span class="secondary-text stats">Followers</span></p>
-        </li>
-        <li>
-          <p>803K<span class="secondary-text stats">Likes</span></p>
-        </li>
-        <li>
-          <p>1.4K<span class="secondary-text stats">Photos</span></p>
-        </li>
-      </ul>
+    <img src="./images/bg-pattern-top.svg" alt="background desing" class="background-desing-top">
+    <img src="./images/bg-pattern-bottom.svg" alt="background design" class="background-desing-bottom">
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Ome-yei</a>.
     </div>
-  </div>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Ome-yei</a>.
   </div>
 </body>
+
 </html>
