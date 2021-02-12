@@ -160,15 +160,15 @@ body{
     }
 }
 
-@media screen and (min-width: 1500px){
+@media screen and (min-width: 1440px){
     .background-desing-top{
-        top: -600px;
-        left: -514px;
+        top: -500px;
+        left: -214px;
     }
     
     .background-desing-bottom{
-        bottom: -512px;
-        right: -573px;
+        bottom: -612px;
+        right: -173px;
     }
 }
 
