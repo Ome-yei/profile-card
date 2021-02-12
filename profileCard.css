@@ -38,6 +38,24 @@ body{
     overflow: hidden;
 }
 
+.container::before{
+    content: url('./images/bg-pattern-top.svg');
+    position: absolute;
+    top: -570px;
+    left: -714px;
+    z-index: -1;
+    transition: ease-in-out 250ms;
+}
+
+.container::after{
+    content: url('./images/bg-pattern-bottom.svg');
+    position: absolute;
+    bottom: -512px;
+    right: -773px;
+    z-index: -1;
+    transition: ease-in-out 250ms;
+}
+
 .profileCard{
     /* border: 1px solid red; */
     background: white;
@@ -56,12 +74,6 @@ body{
     border-top-left-radius: inherit;
     border-top-right-radius: inherit;
 }
-
-/* .profileCard-top-img{
-    width: inherit;
-    border-top-left-radius: inherit;
-    border-top-right-radius: inherit;
-} */
 
 .profileCard-middle{
     height: 145px;
@@ -135,73 +147,60 @@ body{
     position: absolute;
 }
 
-.background-desing-top{
-    top: -600px;
-    left: -714px;
-    transition: ease-in 300ms;
-}
-
-.background-desing-bottom{
-    bottom: -512px;
-    right: -773px;
-    transition: ease-in 300ms;
-}
-
 /* Media Query - Desktop */
-@media screen and (min-width: 900px){
-    .background-desing-top{
-        top: -600px;
-        left: -614px;
+@media screen and (min-width: 768px){
+    .container::before{
+        left: -514px;
     }
-    
-    .background-desing-bottom{
-        bottom: -512px;
-        right: -673px;
+
+    .container::after{
+        right: -620px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+
+    .profileCard{
+        width: 350px;
+    }
+    .container::before{
+        left: -414px;
+    }
+
+    .container::after{
+        right: -500px;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    .container::before{
+        top: -500px;
+        left: -300px;
+    }
+
+    .container::after{
+        right: -330px;
     }
 }
 
 @media screen and (min-width: 1440px){
-    .profileCard{
-        width: 350px;
+    .container::before{
+        top: -460px;
+        left: -220px;
     }
-    
-    .background-desing-top{
-        top: -500px;
-        left: -214px;
-    }
-    
-    .background-desing-bottom{
-        bottom: -612px;
-        right: -173px;
+
+    .container::after{
+        right: -170px;
     }
 }
-
-@media screen and (min-width: 1900px){
-    .background-desing-top{
-        top: -600px;
-        left: -414px;
-    }
-    
-    .background-desing-bottom{
-        bottom: -512px;
-        right: -473px;
-    }
-}
-
 
 @media screen and (min-width: 2000px){
-
-    .profileCard{
-        width: 350px;
+    .container::before{
+        top: -460px;
+        left: -20px;
     }
 
-    .background-desing-top{
-        top: -300px;
-        left: 250px;
-    }
-    
-    .background-desing-bottom{
-        bottom: -400px;
-        right: 250px;
+    .container::after{
+        right: 0px;
     }
 }
