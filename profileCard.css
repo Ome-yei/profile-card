@@ -161,6 +161,10 @@ body{
 }
 
 @media screen and (min-width: 1440px){
+    .profileCard{
+        width: 350px;
+    }
+    
     .background-desing-top{
         top: -500px;
         left: -214px;
