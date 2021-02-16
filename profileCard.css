@@ -25,11 +25,11 @@ body{
     font-size: var(--font_size);
     color: var(--title_color);
 
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .container{
-    height: inherit;
+    min-height: inherit;
     display: flex;
     flex-direction: column;
     align-items: center;
